@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날씨 & 계획 캘린더</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>달력 계획서, 근데 이제 날씨를 곁들인</h1>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button id="prev-month-btn"></button>
+            <h1 id="month-year-title"></h1>
+            <button id="next-month-btn">></button>
+        </div>
+        <div class="calendar-grid-header">
+            <div class="day">일</div>
+            <div class="day">월</div>
+            <div class="day">화</div>
+            <div class="day">수</div>
+            <div class="day">목</div>
+            <div class="day">금</div>
+            <div class="day">토</div>
+        </div>
+        <div id="calendar-grid-body" class="calendar-grid-body">
+            <!-- 날짜가 여기에 동적으로 생성됩니다 -->
+        </div>
+    </div>
+
+    <!-- 일정 추가를 위한 모달 팝업 -->
+    <div id="modal-container" class="modal-container">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h2 id="modal-date"></h2>
+            <textarea id="plan-input" placeholder="계획을 입력하세요..."></textarea>
+            <button id="save-plan-btn">저장하기</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
